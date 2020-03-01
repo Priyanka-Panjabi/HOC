@@ -1,24 +1,25 @@
+// React HOC (higher order component)
+    //used to share functionalities among components
+    //syntax  : 
+    // const updatedComponent =(OriginalComponent)=>{
+    //   class NewComponent extends Component{
+    //     render(){
+    //       return <OriginalComponent/>
+    //     }
+    //   }
+    //   return NewComponent
+    // }
+
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ClickCounter from './Components/ClickCounter';
+import HoverCounter from './Components/HoverCounter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ClickCounter/>
+      <HoverCounter/>
     </div>
   );
 }
